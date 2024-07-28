@@ -28,6 +28,8 @@ class HomePage extends StatelessWidget {
         height: 85,
         width: 150,
       decoration: BoxDecoration(
+        image: DecorationImage(image:AssetImage("assets/images/business.jpg"),
+        ),
         color: Colors.amberAccent,
         borderRadius: BorderRadius.circular(16),
       ),
