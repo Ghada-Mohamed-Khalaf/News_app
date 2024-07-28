@@ -25,12 +25,15 @@ class HomePage extends StatelessWidget {
         ),
         backgroundColor: Colors.transparent,
       ),
-      body: ListView.builder(
-        scrollDirection: Axis.horizontal ,
-        itemCount: 10,
-          itemBuilder: (context,index){
-     return CategoryCard();
-    }),
+      body: SizedBox(
+        height:100 ,
+        child: ListView.builder(
+          scrollDirection: Axis.horizontal ,
+          itemCount: 10,
+            itemBuilder: (context,index){
+             return CategoryCard();
+            }),
+      ),
     );
   }
 }
