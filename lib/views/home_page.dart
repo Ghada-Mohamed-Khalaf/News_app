@@ -13,17 +13,21 @@ class HomePage extends StatelessWidget {
     mainAxisSize: MainAxisSize.min,
           children: [
             Text(
-              "News ",
+              "News",
               style: TextStyle(color: Colors.black),
             ),
             Text(
-              " Cloud",
+              "Cloud",
               style: TextStyle(color: Colors.orange),
             ),
           ],
         ),
         backgroundColor: Colors.transparent,
       ),
+      body:Container(
+       // decoration: BoxDecoration(),
+        child: Text("Sport"),
+      ) ,
     );
   }
 }
