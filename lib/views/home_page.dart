@@ -25,8 +25,13 @@ class HomePage extends StatelessWidget {
         backgroundColor: Colors.transparent,
       ),
       body:Container(
-       // decoration: BoxDecoration(),
-        child: Text("Sport"),
+        height: 85,
+        width: 150,
+      decoration: BoxDecoration(
+        color: Colors.amberAccent,
+        borderRadius: BorderRadius.circular(16),
+      ),
+        child: Center(child: Text("Sport")),
       ) ,
     );
   }
