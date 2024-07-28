@@ -7,7 +7,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(appBar: AppBar(
       elevation: 0,
-      title: const Text("News Cloud"),
+      title: const Text("News Cloud",style: TextStyle(color: Colors.black),),
       backgroundColor: Colors.transparent,
     ),
 
