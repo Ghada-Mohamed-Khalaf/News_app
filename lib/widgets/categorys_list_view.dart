@@ -5,6 +5,7 @@ import 'package:news_app/widgets/category_card.dart';
 class CategoryListView extends StatelessWidget {
    CategoryListView({super.key});
   final List<CategoryModel> categories=[
+    CategoryModel(image: "assets/images/business.jpg", categoryName:"business"),
 
   ];
 
