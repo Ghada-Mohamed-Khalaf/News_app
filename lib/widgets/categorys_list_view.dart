@@ -12,7 +12,7 @@ class CategoryListView extends StatelessWidget {
           scrollDirection: Axis.horizontal ,
           itemCount: 10,
           itemBuilder: (context,index){
-            return CategoryCard();
+            return const CategoryCard();
           }),
     );
   }
