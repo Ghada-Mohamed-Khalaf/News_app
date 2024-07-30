@@ -26,7 +26,7 @@ class HomePage extends StatelessWidget {
         ),
         backgroundColor: Colors.transparent,
       ),
-      body:  CategoryListView(),
+      body: CategoryListView(),
     );
   }
 }
