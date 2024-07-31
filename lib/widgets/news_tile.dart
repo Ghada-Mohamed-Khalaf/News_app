@@ -20,17 +20,17 @@ class NewsTile extends StatelessWidget {
         SizedBox(
           height: 12,
         ),
-      //   Text(
-      //     "large Title should be places in this place large",
-      //     maxLines: 2,
-      //     overflow: TextOverflow.ellipsis,
-      //     style: TextStyle(
-      //         color: Colors.black87, fontSize: 20, fontWeight: FontWeight.w300),
-      //   ),
-      //   SizedBox(
-      //     height: 8,
-      //   ),
-      //   const Text("and here is the description of the news you can place",maxLines: 2,style: TextStyle(color:Colors.grey,fontSize:14 ),)
+        Text(
+          "large Title should be places in this place large",
+          maxLines: 2,
+          overflow: TextOverflow.ellipsis,
+          style: TextStyle(
+              color: Colors.black87, fontSize: 20, fontWeight: FontWeight.w300),
+        ),
+        SizedBox(
+          height: 8,
+        ),
+        const Text("and here is the description of the news you can place",maxLines: 2,style: TextStyle(color:Colors.grey,fontSize:14 ),)
        ],
     );
   }
