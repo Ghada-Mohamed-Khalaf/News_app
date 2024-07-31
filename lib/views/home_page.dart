@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:news_app/widgets/category_card.dart';
 import 'package:news_app/widgets/categorys_list_view.dart';
+import 'package:news_app/widgets/news_tile.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -26,7 +27,20 @@ class HomePage extends StatelessWidget {
         ),
         backgroundColor: Colors.transparent,
       ),
-      body: CategoryListView(),
+      body:ListView.builder(
+        itemCount: 10,
+
+          itemBuilder: (context, index)
+      {
+        return  Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: NewsTile(),
+        );
+      }),
+      
+      
+      
+
     );
   }
 }

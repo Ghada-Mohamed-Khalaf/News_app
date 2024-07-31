@@ -11,7 +11,7 @@ class NewsTile extends StatelessWidget {
         ClipRRect(
           borderRadius: BorderRadius.circular(6),
           child: Image.network(
-            "https://english.ahram.org.eg/UI/Front/MultimediaInner.aspx?NewsContentID=502316&newsportalname=Multimedia",
+            "https://www.wiseadmit.io/programs/bachelors-in-business-administration-uoibae",
             height: 200,
             width: double.infinity,
             fit: BoxFit.cover,
