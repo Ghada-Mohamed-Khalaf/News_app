@@ -11,23 +11,23 @@ class NewsTile extends StatelessWidget {
         ClipRRect(
           borderRadius: BorderRadius.circular(6),
           child: Image.network(
-            "https://www.wiseadmit.io/programs/bachelors-in-business-administration-uoibae",
+            "https://www.shutterstock.com/image-photo/hands-touching-science-network-connection-260nw-762804589.jpg ",
             height: 200,
             width: double.infinity,
             fit: BoxFit.cover,
           ),
         ),
-        SizedBox(
+        const SizedBox(
           height: 12,
         ),
-        Text(
+        const Text(
           "large Title should be places in this place large",
           maxLines: 2,
           overflow: TextOverflow.ellipsis,
           style: TextStyle(
               color: Colors.black87, fontSize: 20, fontWeight: FontWeight.w300),
         ),
-        SizedBox(
+        const SizedBox(
           height: 8,
         ),
         const Text("and here is the description of the news you can place",maxLines: 2,style: TextStyle(color:Colors.grey,fontSize:14 ),)

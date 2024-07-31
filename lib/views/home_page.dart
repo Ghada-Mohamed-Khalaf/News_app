@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:news_app/widgets/category_card.dart';
 import 'package:news_app/widgets/categorys_list_view.dart';
+import 'package:news_app/widgets/news_list_view.dart';
 import 'package:news_app/widgets/news_tile.dart';
 
 class HomePage extends StatelessWidget {
@@ -9,38 +11,43 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        elevation: 0,
-        centerTitle:true,
-        title: Row(
-    mainAxisSize: MainAxisSize.min,
-          children: [
-            Text(
-              "News",
-              style: TextStyle(color: Colors.black),
-            ),
-            Text(
-              "Cloud",
-              style: TextStyle(color: Colors.orange),
-            ),
-          ],
+        appBar: AppBar(
+          elevation: 0,
+          centerTitle: true,
+          title: const Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Text(
+                "News",
+                style: TextStyle(color: Colors.black),
+              ),
+              Text(
+                "Cloud",
+                style: TextStyle(color: Colors.orange),
+              ),
+            ],
+          ),
+          backgroundColor: Colors.transparent,
         ),
-        backgroundColor: Colors.transparent,
-      ),
-      body:ListView.builder(
-        itemCount: 10,
+        body: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 16,),
+          child:CustomScrollView(
+            slivers: [
+              SliverToBoxAdapter(child: CategoryListView() ,),
+              const SliverToBoxAdapter(child: SizedBox(height: 20,) ,),
+              const SliverToBoxAdapter(child:  NewsListView() ,),
 
-          itemBuilder: (context, index)
-      {
-        return  Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: NewsTile(),
-        );
-      }),
-      
-      
-      
-
-    );
+            ],
+          )
+        //  Column(
+          //   children: [
+          //     CategoryListView(),
+          //     const SizedBox(
+          //       height: 20,
+          //     ),
+          //     const Expanded(child: NewsListView()),
+          //   ],
+          // ),
+        ),);
   }
 }

@@ -6,13 +6,18 @@ class CategoryListView extends StatelessWidget {
   CategoryListView({super.key});
 
   final List<CategoryModel> categories = [
-    CategoryModel(image: "assets/images/img.png", categoryName: "business"),
-    CategoryModel(
-        image: "assets/images/business.jpg", categoryName: "entertaiment"),
+    CategoryModel(image: "assets/images/img.png", categoryName: "science"),
+    CategoryModel(image: "assets/images/health.jpg", categoryName: "health"),
     CategoryModel(
         image: "assets/images/business.jpg", categoryName: "business"),
+    CategoryModel(image: "assets/images/sports.jpg", categoryName: "sport"),
     CategoryModel(
         image: "assets/images/entertaiment.jpg", categoryName: "entertaiment"),
+    CategoryModel(
+        image: "assets/images/general.jpg", categoryName: "general"),
+    CategoryModel(image: "assets/images/tec.jpg", categoryName: "technology"),
+
+
   ];
 
   @override
