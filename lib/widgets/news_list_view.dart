@@ -9,7 +9,7 @@ class NewsListView extends StatelessWidget {
     return ListView.builder(
       shrinkWrap: true,
 
-      physics:   NeverScrollableScrollPhysics(),
+      physics:   const NeverScrollableScrollPhysics(),
         itemCount: 10,
 
         itemBuilder: (context, index)

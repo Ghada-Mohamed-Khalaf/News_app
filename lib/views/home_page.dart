@@ -34,8 +34,14 @@ class HomePage extends StatelessWidget {
           child:CustomScrollView(
             slivers: [
               SliverToBoxAdapter(child: CategoryListView() ,),
-              const SliverToBoxAdapter(child: SizedBox(height: 20,) ,),
-              const SliverToBoxAdapter(child:  NewsListView() ,),
+              SliverList(delegate: SliverChildBuilderDelegate(
+                childCount: 10,
+                      (context,index){
+                return const NewsTile();
+              }
+              )),
+              const SliverToBoxAdapter(child: SizedBox(height: 30,) ,),
+
 
             ],
           )
