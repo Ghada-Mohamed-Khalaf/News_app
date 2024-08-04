@@ -20,9 +20,9 @@ getNews() async{
   Map<String,dynamic> jsonData = response.data;
   List<dynamic>articles =jsonData['articles'] ;
   List<ArticleModel> articlesList = [];
-  // for(var article in articles ){
-  //   ArticleModel articleModel =ArticleModel(title: article['title'], image:  article ['urlToImage'], subTile: article['description'],
-  //   );
+  for(var article in articles ){
+    ArticleModel articleModel =ArticleModel(title: article['title'], image:  article ['urlToImage'], subTile: article['description'],
+    );
   }
 
 
