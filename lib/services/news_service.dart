@@ -4,6 +4,7 @@ import 'dart:js_interop_unsafe';
 
 import 'package:dio/dio.dart';
 import 'package:news_app/main.dart';
+import 'package:news_app/models/article_model.dart';
 
 class NewService{
 
@@ -18,10 +19,12 @@ getNews() async{
 
   Map<String,dynamic> jsonData = response.data;
   List<dynamic>articles =jsonData['articles'] ;
-  print(jsonData['articles ']);
-  for (var article in articles ) {
-    print(article['author']);
+  List<ArticleModel> articlesList = [];
+  // for(var article in articles ){
+  //   ArticleModel articleModel =ArticleModel(title: article['title'], image:  article ['urlToImage'], subTile: article['description'],
+  //   );
   }
+
 
 
 }
